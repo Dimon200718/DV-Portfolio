@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin: 0 auto;
+    width: 100%;
+
+}
+.header_nav{
+    padding-left: 15%;
+    padding-right: 15%;
+    background: #03101A;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.nav_h1{
+    font-size: 30px;
+}
+.logo{
+    font-family: 'Lato';
+}
+span{
+    color: #1F98F0;
+}
+.select{
+    text-decoration: underline;
+}
+.nav_item{
+    font-family: 'Work Sans';
+    margin-left: -45%;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	width: auto;
+	height: 40px;
+	background: #1F98F0;
+	display: block;
+	border-radius: 40px;
+	position: relative;
+	font-size: 16px;
+	padding: 0 10px;
+	line-height: 40px;
+}
+label span {
+	position: relative;
+	margin: 0 10px;
+}
+label span:nth-child(2){
+	color:white;
+}
+label:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 50%;
+	height: 30px;
+	background: #fff;
+	border-radius: 40px;
+	transition: 0.3s;
+	z-index:0;
+}
+
+input:checked + label {
+	background: black;
+}
+input:checked + label span:nth-child(2) {
+	color:black;
+}
+input:checked + label span:nth-child(1) {
+	color:white;
+}
+
+input:checked + label:before {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:before {
+	width: 100px;
+}
+.click {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headertext{
+    width: 36.25%;
+    height:321px;
+}
+.h1{
+    color: #FFFFFF;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.headertext_text{
+    color:#FFFFFF ;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.headertext_img{
+    width: 81%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+.text_img{
+    width: 46%;
+    height: 51px;
+}
+.img1{
+    border-radius: 7px;
+}
+.headerimg{
+    width: 33%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.header__image{
+    border-radius: 18px;
+}
+.img2{
+    margin-left: -130px;
+    border-radius: 35px;
+}
+.img3{
+    z-index: 2;
+    border-radius: 35px;
+}
+.main{
+    padding: 0 15% 0 15%;
+    background-color: #03101A;
+}
+main{
+    height: 1000px;
+    width: 100%;
+}
+.MainFeatures{
+    width: 100%;
+    height: 690px;
+    
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding-right: 15%;
+    font-family: 'Lato';
+    padding-right: 20%;
+}
+.delivery_stat{
+    margin-top: 20%;
+    line-height: 35px;
+}
+.featureheadline{
+    font-size: 30px;
+    margin-top: 20%;
+}
+.featurimg{
+    border-radius: 15px;
+}
+.testimonials{
+    width: 100%;
+    height: 400px;
+    
+    margin-top: 2%;
+}
+.testimonialscont{
+    width: 100%;
+    height: 234px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.textimonialshedline{
+    color:#F2F2F2;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contbox{
+    width: 24.5%;
+    height: 234px;
+    text-align: center;
+}
+.testimg{
+    margin-bottom: 15px;
+}
+.test__headline{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 20px;
+}
+.testimonials_text{
+    font-size: 14px;
+    color: #969494;
+}
+.br{
+    width: 100%;
+    height: 265px;
+    padding-left: 19%;
+    padding-right: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0D6AAE;
+    font-family: 'Lato';
+}
+.brh2{
+    color: white;
+    font-weight: 700;
+    font-size: 34px;
+}
+.brbtn{
+    width: 24%;
+    height: 56px;
+    color: #0D6AAE;
+    font-size: 18px;
+    background-color: white;
+    border-radius:7px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.updatenews{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #03101A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.updateheadline{
+    margin-top: 5%;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.newsimginf{
+    width: 28%;
+    height: 440px;
+}
+.healthy{
+    color: #FFFFFF;
+    font-family: 'Lato';
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+a{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #0D6AAE;
+    text-decoration: none;
+}
+.newsinf{
+    font-family: 'Lato';
+    color: #FFFFFF;
+    margin: 10% 0 10% 0;
+}
+
+.footer{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #03101A;
+    height: 340px;
+}
+footer{
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text{
+    width: 80%;
+    height: 180px;
+}
+.footer__headline{
+    font-size: 31px;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Lato';
+}
+.footer__text_text{
+    color: rgb(142, 141, 141);
+    font-size: 18px;
+    font-family: 'Lato';    
+}
+.footer__btn{
+    width: 13%;
+    height: 41px;
+    border-radius: 7px;
+    background-color: #1F98F0;
+    display: flex;
+    align-items: center;
+justify-content: center;
+color: white;
+}
+.img5{  
+    width: 100%;
+    height: 200px;
+}
+.header_nav.light{
+    background-color: #1F98F0;
+}
+.main.light{
+background-color: white; 
+}
+.featureheadline.light{
+    color: black;
+}
+.information_p.light{
+    color: black;
+}
+.underheadline.light{
+    color: black;
+}
+.textimonialshedline.light{
+color: black;
+}
+.test__headline.light{
+    color: black;
+}
+.br.ligth{
+    background-color: #1F98F0;
+}
+.updatenews.light{
+background-color: white;
+}
+.healthy.light{
+    color: black;
+}
+.newsinf.light{
+    color: black;
+}
+.updateheadline.light{
+    color: black;
+}
